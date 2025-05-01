@@ -13,7 +13,7 @@ Due to the complexity of the React application, the standard build process in Re
 
 To complete the plugin with proper JavaScript functionality, you need to:
 
-1. Clone the GitHub repo: https://github.com/AmeyaMitragotri/StudentSuccessHub
+1. Clone the GitHub repo: https://github.com/ameyamitr/ScoreCalc
 2. Run the build process locally:
    ```bash
    npm install
