@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  
+  /* Primary: Soft blue */
+  --primary: 210 80% 65%;
+  --primary-foreground: 210 40% 98%;
+  
+  /* Secondary: Soft pink */
+  --secondary: 340 80% 75%;
+  --secondary-foreground: 340 50% 10%;
+  
+  /* Accent: Soft yellow */
+  --accent: 45 100% 75%;
+  --accent-foreground: 45 50% 10%;
+  
+  /* Support: Soft green */
+  --supportGreen: 140 40% 70%;
+  --supportGreen-foreground: 140 50% 10%;
+  
+  /* Charts colors */
+  --chart-1: 210 80% 65%;
+  --chart-2: 340 80% 75%;
+  --chart-3: 45 100% 75%;
+  --chart-4: 140 40% 70%;
+  --chart-5: 270 70% 75%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 210 80% 65%;
+  --radius: 0.5rem;
+  
+  /* Sidebar colors (same as standard colors for light mode) */
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 20 14.3% 4.1%;
+  --sidebar-primary: 210 80% 65%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 45 100% 75%;
+  --sidebar-accent-foreground: 45 50% 10%;
+  --sidebar-border: 20 5.9% 90%;
+  --sidebar-ring: 210 80% 65%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  
+  /* Primary: Soft blue (slightly darker for dark mode) */
+  --primary: 210 70% 60%;
+  --primary-foreground: 0 0% 98%;
+  
+  /* Secondary: Soft pink (slightly darker for dark mode) */
+  --secondary: 340 70% 70%;
+  --secondary-foreground: 0 0% 98%;
+  
+  /* Accent: Soft yellow (slightly darker for dark mode) */
+  --accent: 45 80% 70%;
+  --accent-foreground: 0 0% 98%;
+  
+  /* Support: Soft green (slightly darker for dark mode) */
+  --supportGreen: 140 30% 60%;
+  --supportGreen-foreground: 0 0% 98%;
+  
+  /* Charts colors */
+  --chart-1: 210 70% 60%;
+  --chart-2: 340 70% 70%;
+  --chart-3: 45 80% 70%;
+  --chart-4: 140 30% 60%;
+  --chart-5: 270 60% 70%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  
+  /* Sidebar colors (same as standard colors for dark mode) */
+  --sidebar-background: 240 10% 3.9%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 210 70% 60%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 45 80% 70%;
+  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.calculator-card {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.calculator-card:hover {
+  @apply transform -translate-y-1 shadow-lg;
+}
+
+.form-input:focus {
+  @apply border-primary shadow-sm shadow-primary/30;
+}
+
+.result-container {
+  @apply transition-all duration-300 ease-in-out;
+}
