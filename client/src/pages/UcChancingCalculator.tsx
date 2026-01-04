@@ -226,9 +226,9 @@ const UcChancingCalculator = () => {
                   />
                   
                   <div className="flex justify-end">
-                    <Button 
-                      type="submit" 
-                      className="bg-supportGreen hover:bg-supportGreen/90"
+                    <Button
+                      type="submit"
+                      className="bg-primary hover:bg-primary/90"
                       disabled={calculateMutation.isPending}
                     >
                       {calculateMutation.isPending ? "Calculating..." : "Calculate Chances"}

@@ -177,9 +177,9 @@ const FinalGradeCalculator = () => {
                   </div>
                   
                   <div className="flex justify-end">
-                    <Button 
-                      type="submit" 
-                      className="bg-secondary hover:bg-secondary/90"
+                    <Button
+                      type="submit"
+                      className="bg-primary hover:bg-primary/90"
                       disabled={calculateMutation.isPending}
                     >
                       {calculateMutation.isPending ? "Calculating..." : "Calculate Needed Grade"}
